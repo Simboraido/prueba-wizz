@@ -132,6 +132,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Configuración de autenticación
 AUTH_USER_MODEL = "users.customUser"
 
+# En producción, deberías configurar esto con los dominios de tu aplicación
+
+ALLOWED_HOSTS = ['prueba-wizz.onrender.com', 'localhost', '127.0.0.1']
+
 # Configuración de Django REST Framework
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -140,4 +144,6 @@ REST_FRAMEWORK = {
     # Implementamos Paginación
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
+
+    
 }
