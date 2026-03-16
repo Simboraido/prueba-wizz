@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-=6+-2f%k$fg=@3zixd4u5*d$abon-b*bd7z_xphnatxs*)2n^&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Añadir para renderización virtual 
+
+ALLOWED_HOSTS = ['prueba-wizz.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -132,9 +134,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Configuración de autenticación
 AUTH_USER_MODEL = "users.customUser"
 
-# En producción, deberías configurar esto con los dominios de tu aplicación
 
-ALLOWED_HOSTS = ['prueba-wizz.onrender.com', 'localhost', '127.0.0.1']
 
 # Configuración de Django REST Framework
 REST_FRAMEWORK = {
